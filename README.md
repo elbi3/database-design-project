@@ -14,6 +14,5 @@ The EER is designed around Users, their submissions (of content and comments), a
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=vscode&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4169E1.svg?style=for-the-badge&logo=visual-studio-code&logoColor=orange)
-![PATTERNS ERD](EER/EER_DIAGRAM_.png)
 
 ## How to Run Scripts
