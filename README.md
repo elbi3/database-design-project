@@ -4,4 +4,8 @@ Many modern reprints of vintage patterns are not faithful reproductions. Sewists
 
 The EER is designed around Users, their submissions (of content and comments), and their relationship with both the content they add and that content in reference to pre-existing sewing patterns. The most important data exists in the table relationships happening between the User tables and the Pattern tables. Without the connecting categories (comments, submissions), there would be no point for storing User or Pattern data. 
 
+## Technologies Used 
+![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
 ![PATTERNS ERD](EER/EER_DIAGRAM_.png)
