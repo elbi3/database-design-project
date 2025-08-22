@@ -1,6 +1,6 @@
 # Database Design for Vintage Patterns and their Corrections
 
-Purpose: Store patterns and modifications for use in an app
+Purpose: Store patterns and user-created modifications for use in an app
 
 ## Abstract
 Many modern reprints of vintage patterns are not faithful reproductions. Sewists are discovering the descrepancies between the old and new patterns through trial and error. Since the originals are usually not available, the only recourse a sewist has is to look for another's corrections, or to correct the reproduction themselves. This database concept attempts to link new corrections with reprinted patterns. It provides a mechanism for users to upvote content so that the good reproductions rise to the top, and the good corrections rise to the top.
