@@ -3,9 +3,9 @@
 Purpose: Store patterns and user-created modifications for use in an app
 
 ## Abstract
-Many modern reprints of vintage patterns are not faithful reproductions. Sewists are discovering the descrepancies between the old and new patterns through trial and error. Since the originals are often available, the only recourse a sewist has is to look for another's corrections, or to correct the reproduction themselves. This database concept attempts to link new corrections with reprinted patterns. It provides a mechanism for users to upvote content so that the good reproductions rise to the top, and the good corrections rise to the top.
+Many modern reprints of vintage patterns are not faithful reproductions. Sewists are discovering the descrepancies between the old and new patterns through trial and error. Since the originals are often available, the only recourse a sewist has is to look for another's corrections, or to correct the reproduction themselves. This database concept attempts to link new corrections with reprinted patterns. It provides a mechanism for users to upvote content so that the good reprints get the most attention and needed corrections are put "on top of the pile".
 
-The EER is designed around Users, their submissions (of content and comments), and their relationship with both the content they add and that content in reference to pre-existing sewing patterns. The most important data exists in the table relationships happening between the User tables and the Pattern tables. Without the connecting categories (comments, submissions), there would be no point for storing User or Pattern data. 
+The EER is designed around Users, the content the bring to the app (comments, pattern re-drafts), and their relationship with that content in reference to pre-existing sewing patterns (copy-wrighted material). The most important data exists in the table relationships happening between the User tables and the Pattern tables. Without the connecting categories (comments, submissions), there would be no point for storing User or Pattern data. 
 
 ## Technologies Used 
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
