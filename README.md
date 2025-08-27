@@ -11,22 +11,24 @@ The EER is designed around Users, the content the bring to the app (comments, pa
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=vscode&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4169E1.svg?style=for-the-badge&logo=visual-studio-code&logoColor=orange)
-- [![Git][git]][git-url]
-- [![GitHub][github]][github-url]
+- [![Git][git]](https://img.shields.io/badge/Git-2E0305?style=for-the-badge&logo=git&logoColor=FF3E00)
+- [![GitHub][(https://github.com/)](https://img.shields.io/badge/GitHub-22043C?style=for-the-badge&logo=github&logoColor=FF3E00)
 [github]: https://img.shields.io/badge/GitHub-22043C?style=for-the-badge&logo=github&logoColor=FF3E00
 [github-url]: https://github.com/
 
 ## How to Run SQL Scripts
-This database is still in its design phase. Scripts have been run on my machine in MySQLWorkbench. Later iterations of the project are still in the works.
+This database is still in its design phase. Scripts have been developed on my machine in MySQLWorkbench. Later iterations of the project to build the database are still in the works.
 
 ### On your machine:
-1. Fork the Repo from the [Repository](https://github.com/elbi3/SewingPatternAP-DB)
-2. Clone it with
-3. ```sh
+1. Navigate to the green Code button on the repository, and clone it by copying the [SSH](git@github.com:elbi3/SewingPatternApp-DB.git).
+2. Clone it with terminal command:
+   ```sh
    git clone https://github.com/elbi3/SewingPatternAP-DB
    ```
-4. Open files in IDE of choice.
+3. Open files in IDE of choice.
    
+- Alternatively, select "Open with Github Desktop" to view files in Github Desktop.
+  
 ## ERD
 <img width="654" height="591" alt="erd_08_19_2025" src="https://github.com/user-attachments/assets/867875cd-a0a4-4327-9e44-1df2e4b4b452" />
 
