@@ -26,3 +26,8 @@ FROM alterations
 -- SELECT patterns.pattern_number, comments.comment_content
 -- FROM comments
 -- 	JOIN patterns USING(pattern_id);
+-- some indexes to speed up searches
+        -- SELECT *
+        -- FROM YourTable WITH (INDEX(YourIndexName))
+        -- WHERE YourColumn = 'SomeValue';
+		--  EXPLAIN SELECT * FROM your_table WHERE indexed_column = 'some_value';
