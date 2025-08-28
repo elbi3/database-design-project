@@ -21,6 +21,7 @@
 - Submission has 0 or many Comments
 - Submission has 0 or many Upvotes
 
+(wishlist table: )
 ## Upvote
 - Upvotes have one User and one Comment 
 - Upvotes have one User and one Submission

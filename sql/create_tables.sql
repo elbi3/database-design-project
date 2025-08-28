@@ -8,6 +8,14 @@ CREATE TABLE users (
     last_login TIMESTAMP
 );
 
+CREATE TABLE patterns (
+	pattern_id INT PRIMARY KEY AUTO_INCREMENT,
+	pattern_number VARCHAR(15),
+    pattern_series VARCHAR(255),
+    pattern_company VARCHAR(100),
+    pattern_thumbnail VARCHAR(250)
+);
+
 CREATE TABLE comments (
 	comment_id INT PRIMARY KEY AUTO_INCREMENT,
     comment_content TEXT NOT NULL,
@@ -30,12 +38,4 @@ CREATE TABLE alterations (
     FOREIGN KEY (user_id) REFERENCES Users(user_id),
     FOREIGN KEY (pattern_id) REFERENCES Patterns(pattern_id),
     FOREIGN KEY (comment_id) REFERENCES Comments(comment_id)
-);
-
-CREATE TABLE patterns (
-	pattern_id INT PRIMARY KEY AUTO_INCREMENT,
-	pattern_number VARCHAR(15),
-    pattern_series VARCHAR(255),
-    pattern_company VARCHAR(100),
-    pattern_thumbnail VARCHAR(250)
 );
