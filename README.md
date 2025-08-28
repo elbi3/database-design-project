@@ -34,7 +34,7 @@ This database is still in its design phase. Scripts have been developed on my ma
 4. Click the lightning bolt icon in the toolbar to execute all statements within the opened file.
 
 ## ERD
-<!-- <img width="654" height="591" alt="erd_08_19_2025" src="https://github.com/user-attachments/assets/867875cd-a0a4-4327-9e44-1df2e4b4b452" /> -->
+<img width="654" height="591" alt="erd_08_19_2025" src="https://github.com/user-attachments/assets/867875cd-a0a4-4327-9e44-1df2e4b4b452" /> 
 
 
 
