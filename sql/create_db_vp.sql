@@ -19,8 +19,7 @@ CREATE TABLE users (
     last_login TIMESTAMP
 );
 DESC users;
-SELECT *
-FROM users;
+
 CREATE TABLE patterns (
 	pattern_id INT PRIMARY KEY AUTO_INCREMENT,
 	pattern_number VARCHAR(15),
@@ -29,8 +28,7 @@ CREATE TABLE patterns (
     pattern_thumbnail VARCHAR(250)
 );
 DESC patterns;
-SELECT *
-FROM patterns;
+
 CREATE TABLE comments (
 	comment_id INT PRIMARY KEY AUTO_INCREMENT,
     comment_content TEXT NOT NULL,
@@ -42,8 +40,7 @@ CREATE TABLE comments (
     FOREIGN KEY (user_id) REFERENCES Users(user_id)
 );
 DESC comments;
-SELECT *
-FROM comments;
+
 CREATE TABLE alterations (
     alteration_id INT PRIMARY KEY,
     alteration_content TEXT NOT NULL,
@@ -57,8 +54,7 @@ CREATE TABLE alterations (
     FOREIGN KEY (comment_id) REFERENCES Comments(comment_id)
 );
 DESC alterations;
-SELECT * 
-FROM alterations;
+
 -- insert rows into the tables
 
 INSERT INTO users VALUES
