@@ -37,4 +37,5 @@ This database is still in its design phase. Scripts have been developed on my ma
 <img width="654" height="591" alt="erd_08_19_2025" src="https://github.com/user-attachments/assets/867875cd-a0a4-4327-9e44-1df2e4b4b452" /> 
 
 
+![relationship_ref](https://github.com/user-attachments/assets/a954a41f-f7c0-4694-90ef-0464e6f2758d)
 
