@@ -27,8 +27,14 @@ This database is still in its design phase. Scripts have been developed on my ma
    
 - Alternatively, select "Open with Github Desktop" to view files in Github Desktop.
   
+## With MySQL Workbench:
+1. Open MySQL Workbench and establish a connection to your desired MySQL server instance.
+2. To open an SQL file, navigate to the "file" menu and select "Open SQL Script..."
+3. Locate and open the file of choice from the popup, and selected SQL file will load into a new query editor tab.
+4. Click the lightning bolt icon in the toolbar to execute all statements within the opened file.
+
 ## ERD
-<img width="654" height="591" alt="erd_08_19_2025" src="https://github.com/user-attachments/assets/867875cd-a0a4-4327-9e44-1df2e4b4b452" />
+<!-- <img width="654" height="591" alt="erd_08_19_2025" src="https://github.com/user-attachments/assets/867875cd-a0a4-4327-9e44-1df2e4b4b452" /> -->
 
 
 
