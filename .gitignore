@@ -40,3 +40,7 @@ coverage
 _week_67_trouble.md
 
 .env
+
+# temp files
+/archive/*
+to_do.md
