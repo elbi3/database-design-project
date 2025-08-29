@@ -28,6 +28,7 @@ entity Users {
 entity Patterns { 
     pattern_id: INT key //PK
     user_id: user_id key // FK to Users
+    
     pattern_number: VARCHAR(50) // NOT NULL
     pattern_name: VARCHAR(255)
     pattern_subheading: VARCHAR(255)
