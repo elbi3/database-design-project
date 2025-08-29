@@ -1,5 +1,5 @@
 # Database Design for Vintage Patterns and their Corrections
-
+[Abstract](## Abstract)
 Purpose: Store patterns and user-created modifications for use in an app
 
 ## Abstract
