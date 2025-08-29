@@ -46,12 +46,15 @@ This database is still in its design phase. Scripts have been developed on my ma
 ### see nested comments
 <img src="docs/query_screenshots/comments-nested.png" alt="nested comments sql query" width=1000>
 <!-- ![nested comments sql query](docs/query_screenshots/comments-nested.png) -->
+
 ### see the most commented patterns
 <img src="docs/query_screenshots/most_commented_patterns.png" alt="most commented patterns sql query" width=1000>
 <!-- ![most commented patterns sql query](docs/query_screenshots/most_commented_patterns.png) -->
+
 ### see parent comments and nested reply comments in one query
 <img src="docs/query_screenshots/parent_comment_nested_reply.png" alt="parent and nested reply comments sql query" width=1000>
 <!-- ![parent and nested reply comments sql query](docs/query_screenshots/parent_comment_nested_reply.png) -->
+
 ### see which users are the top commenters on the site
 <img src="docs/query_screenshots/top_commenters.png" alt="top commenters sql query" width=1000>
 <!-- ![top commenters sql query](docs/query_screenshots/top_commenters.png) -->
