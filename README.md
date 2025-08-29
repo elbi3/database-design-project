@@ -39,14 +39,17 @@ This database is still in its design phase. Scripts have been developed on my ma
 4. Click the lightning bolt icon in the toolbar to execute all statements within the opened file.
 
 ## ERD
-<img width="654" height="591" alt="erd_08_19_2025" src="https://github.com/user-attachments/assets/867875cd-a0a4-4327-9e44-1df2e4b4b452" /> 
 
 ![ERD made in mermaid](design/erd_readme.png)
 
 ## Example Queries
+### see nested comments
 ![nested comments sql query](docs/query_screenshots/comments-nested.png)
+### see the most commented patterns
 ![most commented patterns sql query](docs/query_screenshots/most_commented_patterns.png)
+### see parent comments and nested reply comments in one query
 ![parent and nested reply comments sql query](docs/query_screenshots/parent_comment_nested_reply.png)
+### see which users are the top commenters on the site
 ![top commenters sql query](docs/query_screenshots/top_commenters.png)
 
 ### Schema is so chatty:
