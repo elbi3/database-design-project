@@ -1,5 +1,11 @@
 # Database Design for Vintage Patterns and their Corrections
 ## Purpose: Store patterns and user-created modifications for use in an app
+
+* [Abstract](#Abstract)
+* [How to Run it](#how-to-run-sql-scripts)
+* [ERD](#erd)
+* [Example Queries](#example-queries)
+
 ## Technologies Used 
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=vscode&logoColor=white)
@@ -7,10 +13,6 @@
 ![Git](https://img.shields.io/badge/Git-2E0305?style=for-the-badge&logo=git&logoColor=fa7c52)
 ![GitHub](https://img.shields.io/badge/GitHub-22043C?style=for-the-badge&logo=github&logoColor=fa7c52)
 ![Mermaid](https://img.shields.io/badge/Mermaid-FF3670?style=for-the-badge&logo=mermaid&logoColor=white)
-* [Abstract](#Abstract)
-* [How to Run it](#how-to-run-sql-scripts)
-* [ERD](#erd)
-* [Example Queries](#example-queries)
 
 ## Abstract
 Many modern reprints of vintage patterns are not faithful reproductions. Sewists are discovering the descrepancies between the old and new patterns through trial and error. Since the originals are often available, the only recourse a sewist has is to look for another's corrections, or to correct the reproduction themselves. This database concept attempts to link new corrections with reprinted patterns. It provides a mechanism for users to upvote content so that the good reprints get the most attention and needed corrections are put "on top of the pile".
@@ -42,7 +44,7 @@ This database is still in its design phase. Scripts have been developed on my ma
 
 ## Example Queries
 ### see nested comments
-<img src="docs/query_screenshots/comments-nested.png" alt="nested comments sql query" width="24rem">
+<img src="docs/query_screenshots/comments-nested.png" alt="nested comments sql query" width=100>
 <!-- ![nested comments sql query](docs/query_screenshots/comments-nested.png) -->
 ### see the most commented patterns
 <img src="docs/query_screenshots/most_commented_patterns.png" alt="most commented patterns sql query" width="24rem">
