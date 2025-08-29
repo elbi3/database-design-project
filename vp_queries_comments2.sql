@@ -1,5 +1,5 @@
 USE vp;
--- users
+-- patterns& users
 -- Count how many users the app has:
 SELECT COUNT(*)
 FROM vp.users;
@@ -16,19 +16,18 @@ FROM users
 WHERE users.last_login > '2024-10-25';
 
 -- get users who have not submitted a pattern
-SELECT users.user_id, users.username, users.email
-FROM users 
-LEFT JOIN patterns ON users.user_id = patterns.user_id
-WHERE patterns.user_id IS NULL;
+SELECT u.user_id, u.username, u.email
+FROM users u
+LEFT JOIN patterns p ON u.user_id = p.user_id
+WHERE p.user_id IS NULL;
 
 -- get users who have submitted more than one pattern
-SELECT users.user_id, users.username, users.email, COUNT(patterns.pattern_id) AS pattern_count
-FROM users
-JOIN patterns ON users.user_id = patterns.user_id
-GROUP BY users.user_id, users.username, users.email
-HAVING COUNT(patterns.pattern_id) > 1;
+SELECT u.user_id, u.username, u.email, COUNT(p.pattern_id) AS pattern_count
+FROM users u
+JOIN patterns p ON u.user_id = p.user_id
+GROUP BY u.user_id, u.username, u.email
+HAVING COUNT(p.pattern_id) > 1;
 
--- patterns
 -- get all pattern companies and total the patterns we have for each company
 SELECT pattern_company AS Company, COUNT(pattern_company) AS `Total Patterns in DB`
 FROM patterns
@@ -65,6 +64,16 @@ GROUP BY comments.comment_id, comments.comment_text, comments.user_id, comments.
 HAVING COUNT(nested.comment_id) > 0
 ORDER BY reply_count DESC;
     
+    CREATE VIEW PatternCommentsSummary AS
+	SELECT 
+		patterns.pattern_id,
+		patterns.pattern_name,
+		patterns.pattern_company,
+		COUNT(patterns_comments.comment_id) AS total_comments
+	FROM patterns 
+	LEFT JOIN patterns_comments  ON patterns.pattern_id = patterns_comments.pattern_id
+	GROUP BY patterns.pattern_id, patterns.pattern_name, patterns.pattern_company;
+
 -- view parent comment and nested reply
 SELECT parent.comment_id AS parent_comment_id,
     parent.comment_text AS parent_comment_text,
@@ -78,3 +87,12 @@ FROM nested_comments
 	JOIN comments parent ON nested_comments.parent_comment_id = parent.comment_id
 	JOIN comments reply ON nested_comments.comment_id = reply.comment_id
 ORDER BY parent.created_at, reply.created_at;
+CREATE VIEW UserPatternsSummary AS
+SELECT users.user_id,
+    users.username,
+    users.email,
+    users.last_login,
+    COUNT(patterns.pattern_id) AS pattern_count
+FROM users 
+	LEFT JOIN patterns  ON users.user_id = patterns.user_id
+GROUP BY users.user_id, users.username, users.email, users.last_login;
