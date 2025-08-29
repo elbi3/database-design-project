@@ -40,23 +40,24 @@ This database is still in its design phase. Scripts have been developed on my ma
 
 ## ERD
 
-![ERD made in mermaid](design/erd_readme.png)
+<img src="design/erd_readme.png" alt="ERD made in mermaid" width=750>
+<!-- ![ERD made in mermaid](design/erd_readme.png) -->
 
 ## Example Queries
 ### Query for nested comments:
-<img src="docs/query_screenshots/comments-nested.png" alt="nested comments sql query" width=500>
+<img src="docs/query_screenshots/comments-nested.png" alt="nested comments sql query" width=750>
 <!-- ![nested comments sql query](docs/query_screenshots/comments-nested.png) -->
 
 ### Query for the most commented patterns:
-<img src="docs/query_screenshots/most_commented_patterns.png" alt="most commented patterns sql query" width=1000>
+<img src="docs/query_screenshots/most_commented_patterns.png" alt="most commented patterns sql query" width=750>
 <!-- ![most commented patterns sql query](docs/query_screenshots/most_commented_patterns.png) -->
 
 ### Query for parent comments and nested reply comments in one request:
-<img src="docs/query_screenshots/parent_comment_nested_reply.png" alt="parent and nested reply comments sql query" width=1000>
+<img src="docs/query_screenshots/parent_comment_nested_reply.png" alt="parent and nested reply comments sql query" width=750>
 <!-- ![parent and nested reply comments sql query](docs/query_screenshots/parent_comment_nested_reply.png) -->
 
 ### Query which users are the top commenters on the site:
-<img src="docs/query_screenshots/top_commenters.png" alt="top commenters sql query" width=1000>
+<img src="docs/query_screenshots/top_commenters.png" alt="top commenters sql query" width=750>
 <!-- ![top commenters sql query](docs/query_screenshots/top_commenters.png) -->
 
 ### Schema is so chatty:
