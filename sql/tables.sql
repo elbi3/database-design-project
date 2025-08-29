@@ -39,3 +39,4 @@ CREATE TABLE alterations (
     FOREIGN KEY (pattern_id) REFERENCES Patterns(pattern_id),
     FOREIGN KEY (comment_id) REFERENCES Comments(comment_id)
 );
+            document.getElementById("hidden-button").hidden = false;
