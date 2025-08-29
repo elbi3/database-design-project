@@ -1,5 +1,5 @@
 # Database Design for Vintage Patterns and their Corrections
-[Abstract](#Abstract) [Technologies](#Technologies) [How to Run it](#How) [ERD](#ERD) [Example Queries](#Example)
+[Abstract](#Abstract) [Technologies](#how-to-run-sql-scripts) [How to Run it](#How) [ERD](#ERD) [Example Queries](#Example)
 Purpose: Store patterns and user-created modifications for use in an app
 
 ## Abstract
