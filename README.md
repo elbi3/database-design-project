@@ -1,6 +1,10 @@
 # Database Design for Vintage Patterns and their Corrections
-[Abstract](#Abstract) [Technologies](#technologies) [How to Run it](#how-to-run-sql-scripts) [ERD](#erd) [Example Queries](#example)
-Purpose: Store patterns and user-created modifications for use in an app
+## Purpose: Store patterns and user-created modifications for use in an app
+* [Abstract](#Abstract)
+* [Technologies](#technologies-used)
+* [How to Run it](#how-to-run-sql-scripts)
+* [ERD](#erd)
+* [Example Queries](#example-queries)
 
 ## Abstract
 Many modern reprints of vintage patterns are not faithful reproductions. Sewists are discovering the descrepancies between the old and new patterns through trial and error. Since the originals are often available, the only recourse a sewist has is to look for another's corrections, or to correct the reproduction themselves. This database concept attempts to link new corrections with reprinted patterns. It provides a mechanism for users to upvote content so that the good reprints get the most attention and needed corrections are put "on top of the pile".
