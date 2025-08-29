@@ -44,7 +44,7 @@ This database is still in its design phase. Scripts have been developed on my ma
 
 ## Example Queries
 ### Query for nested comments:
-<img src="docs/query_screenshots/comments-nested.png" alt="nested comments sql query" width=1000>
+<img src="docs/query_screenshots/comments-nested.png" alt="nested comments sql query" width=500>
 <!-- ![nested comments sql query](docs/query_screenshots/comments-nested.png) -->
 
 ### Query for the most commented patterns:
