@@ -1,5 +1,5 @@
 # Database Design for Vintage Patterns and their Corrections
-[Abstract](## Abstract)
+[Abstract](#Abstract) [Technologies](#Technologies) [How to Run it](#How) [ERD](#ERD) [Example Queries](#Example)
 Purpose: Store patterns and user-created modifications for use in an app
 
 ## Abstract
@@ -14,6 +14,7 @@ The EER is designed around Users, the content the bring to the app (comments, pa
 ![Git](https://img.shields.io/badge/Git-2E0305?style=for-the-badge&logo=git&logoColor=fa7c52)
 ![GitHub](https://img.shields.io/badge/GitHub-22043C?style=for-the-badge&logo=github&logoColor=fa7c52)
 ![Mermaid](https://img.shields.io/badge/Mermaid-FF3670?style=for-the-badge&logo=mermaid&logoColor=white)
+
 ## How to Run SQL Scripts
 This database is still in its design phase. Scripts have been developed on my machine in MySQLWorkbench. Later iterations of the project to build the database are still in the works.
 
