@@ -36,6 +36,14 @@ This database is still in its design phase. Scripts have been developed on my ma
 ## ERD
 <img width="654" height="591" alt="erd_08_19_2025" src="https://github.com/user-attachments/assets/867875cd-a0a4-4327-9e44-1df2e4b4b452" /> 
 
+![ERD made in mermaid](design/erd_readme.png)
+
+## Example Queries
+![nested comments sql query](docs/query_screenshots/comments-nested.png)
+![most commented patterns sql query](docs/query_screenshots/most_commented_patterns.png)
+![parent and nested reply comments sql query](docs/query_screenshots/parent_comment_nested_reply.png)
+![top commenters sql query](docs/query_screenshots/top_commenters.png)
+
 ### Schema is so chatty:
 ![relationship_ref](https://github.com/user-attachments/assets/a954a41f-f7c0-4694-90ef-0464e6f2758d)
 
