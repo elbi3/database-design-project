@@ -16,17 +16,17 @@ FROM users
 WHERE users.last_login > '2024-10-25';
 
 -- get users who have not submitted a pattern
-SELECT u.user_id, u.username, u.email
-FROM users u
-LEFT JOIN patterns p ON u.user_id = p.user_id
-WHERE p.user_id IS NULL;
+SELECT users.user_id, users.username, users.email
+FROM users 
+LEFT JOIN patterns ON users.user_id = patterns.user_id
+WHERE patterns.user_id IS NULL;
 
 -- get users who have submitted more than one pattern
-SELECT u.user_id, u.username, u.email, COUNT(p.pattern_id) AS pattern_count
-FROM users u
-JOIN patterns p ON u.user_id = p.user_id
-GROUP BY u.user_id, u.username, u.email
-HAVING COUNT(p.pattern_id) > 1;
+SELECT users.user_id, users.username, users.email, COUNT(patterns.pattern_id) AS pattern_count
+FROM users
+JOIN patterns ON users.user_id = patterns.user_id
+GROUP BY users.user_id, users.username, users.email
+HAVING COUNT(patterns.pattern_id) > 1;
 
 -- patterns
 -- get all pattern companies and total the patterns we have for each company

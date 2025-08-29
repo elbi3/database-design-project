@@ -1,0 +1,51 @@
+erDiagram
+
+  USERS ||--o{ PATTERNS : "has"
+  USERS ||--o{ COMMENTS : "writes"
+  PATTERNS ||--o{ PATTERNS_COMMENTS : "receives"
+  COMMENTS ||--o{ PATTERNS_COMMENTS : "is on"
+  COMMENTS ||--o{ NESTED_COMMENTS : "is parent"
+  COMMENTS ||--o{ NESTED_COMMENTS : "is reply"
+
+  USERS {
+    INT user_id PK
+    VARCHAR username UNIQUE
+    VARCHAR email UNIQUE
+    VARCHAR user_phone
+    VARCHAR password_hash
+    TIMESTAMP created_at
+    TIMESTAMP last_login
+  }
+
+  PATTERNS {
+    INT pattern_id PK
+    VARCHAR pattern_number
+    VARCHAR pattern_name
+    VARCHAR pattern_subheading
+    VARCHAR pattern_company
+    VARCHAR pattern_size
+    VARCHAR pattern_category
+    BLOB pattern_thumbnail
+    TEXT user_text
+    VARCHAR photo_url
+    INT user_id FK
+  }
+
+  COMMENTS {
+    INT comment_id PK
+    TEXT comment_text
+    TIMESTAMP created_at
+    INT user_id FK
+  }
+
+  PATTERNS_COMMENTS {
+    INT pattern_comment_id PK
+    INT pattern_id FK
+    INT comment_id FK
+  }
+
+  NESTED_COMMENTS {
+    INT nested_comment_id PK
+    INT parent_comment_id FK
+    INT comment_id FK
+  }
