@@ -1,0 +1,65 @@
+// header
+erdiagram Vintage_Pattern_App 
+// for an app with many comments and many targets for comments
+
+// notation
+notation=crowsfoot
+
+// model elements
+relationship Users_Patterns {Users [0..N] Patterns} //makes zero or many
+relationship Users_Comments {Users [0..N] Comments} //makes zero or many
+relationship Patterns_Comments {Patterns [0..N] Comments} //receives 0 or many 
+
+relationship Patterns_Comments_Comments {Patterns_Comments [1..1] Comments} //links to
+relationship Nested_Comments_Comments {Nested_Comments [1..1] Comments} //is parent of
+relationship Nested_Comments_Comments_2 {Nested_Comments [1..1] Comments} //is child of
+// users of the application
+entity Users {
+    user_id: INT key //PK
+    username: VARCHAR(75)
+    email: VARCHAR(75)
+    user_phone: INT(15)
+    password_hash: VARCHAR(250)
+    created_at: TIMESTAMP
+    last_login: TIMESTAMP
+}
+
+// a user's submission about a Pattern in print (physical object)
+entity Patterns { 
+    pattern_id: INT key //PK
+    user_id: user_id key // FK to Users
+    
+    pattern_number: VARCHAR(50) // NOT NULL
+    pattern_name: VARCHAR(255)
+    pattern_subheading: VARCHAR(255)
+    pattern_company: VARCHAR(100) // NOT NULL
+    pattern_size: VARCHAR(100)
+    pattern_category: VARCHAR(100)
+    pattern_thumbnail: BLOB
+    user_text: TEXT
+    photo_url: VARCHAR(255) 
+    // need a ^photo(s!) upload solution, outside of the scope of this project
+}
+
+// "Concrete Table Inheritance model": 
+// use linking tables to maintain strong referential integrity for each relationship type
+
+// base table for all comment text:
+entity Comments {
+    comment_id: INT key //PK
+    user_id: user_id key //FK to Users
+    comment_text: TEXT
+    created_at: TIMESTAMP
+}
+
+entity Patterns_Comments {
+    pattern_comment_id: INT key //PK
+    pattern_id: pattern_id key //FK to Patterns
+    comment_id: comment_id key //FK to Comments
+}
+
+entity Nested_Comments {
+    nested_comment_id: INT key //PK
+    parent_comment_id: comment_id key //FK to Comments
+    comment_id: comment_id key //FK to Comments
+}
