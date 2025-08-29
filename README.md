@@ -42,14 +42,17 @@ This database is still in its design phase. Scripts have been developed on my ma
 
 ## Example Queries
 ### see nested comments
-<img src="docs/query_screenshots/comments-nested.png" alt="nested comments sql query" width="24em">
-![nested comments sql query](docs/query_screenshots/comments-nested.png)
+<img src="docs/query_screenshots/comments-nested.png" alt="nested comments sql query" width="24rem">
+<!-- ![nested comments sql query](docs/query_screenshots/comments-nested.png) -->
 ### see the most commented patterns
-![most commented patterns sql query](docs/query_screenshots/most_commented_patterns.png)
+<img src="docs/query_screenshots/most_commented_patterns.png" alt="most commented patterns sql query" width="24rem">
+<!-- ![most commented patterns sql query](docs/query_screenshots/most_commented_patterns.png) -->
 ### see parent comments and nested reply comments in one query
-![parent and nested reply comments sql query](docs/query_screenshots/parent_comment_nested_reply.png)
+<img src="docs/query_screenshots/parent_comment_nested_reply.png" alt="parent and nested reply comments sql query" width="24rem">
+<!-- ![parent and nested reply comments sql query](docs/query_screenshots/parent_comment_nested_reply.png) -->
 ### see which users are the top commenters on the site
-![top commenters sql query](docs/query_screenshots/top_commenters.png)
+<img src="docs/query_screenshots/top_commenters.png" alt="top commenters sql query" width="24rem">
+<!-- ![top commenters sql query](docs/query_screenshots/top_commenters.png) -->
 
 ### Schema is so chatty:
 ![relationship_ref](https://github.com/user-attachments/assets/a954a41f-f7c0-4694-90ef-0464e6f2758d)
